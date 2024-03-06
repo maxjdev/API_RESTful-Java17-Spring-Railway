@@ -13,8 +13,6 @@ public abstract class BaseItem {
     private String icon;
     private String description;
 
-    // Getters & Setters
-
     public Long getId() {
         return id;
     }
