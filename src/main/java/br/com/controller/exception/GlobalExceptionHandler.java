@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
-    private final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
+    private final Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
     @ExceptionHandler
     public ResponseEntity<String> handleBusinessException(IllegalArgumentException businessException) {
@@ -26,7 +26,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler
     public ResponseEntity<String> handleUnexpectedException(Throwable unexpectedException) {
         var message = "\n *** Unexpected server error, see the logs. *** \n";
-        logger.error(message, unexpectedException);
+        LOGGER.error(message, unexpectedException);
         return new ResponseEntity<>(message, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
