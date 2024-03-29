@@ -1,8 +1,6 @@
 <div align="center">
 
-  <h1>RESTful-Java17-Spring-Railway <a href="https://restful-java17.up.railway.app/">Deploy</a></h1>
-
-  <h2><a href="https://restful-java17.up.railway.app/swagger-ui/index.html">Documentation</a></h2>
+  <h1>RESTful-Java17-Spring-Railway </h1>
 
 ### Techs Used
 
